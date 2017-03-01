@@ -7,15 +7,30 @@
     <meta name="author" content="">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/custom.css">
+    
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- Owl Carousel JS -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/custom.css">
 
     <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="container-fluid col-sm-offset-2">
+    <div class="container-fluid">
+        <div class="container-fluid col-sm-offset-2 col-sm-8">
+            <header>
                 <div class="row">
                     <div class="col-sm-2 logo">
                         <a href="index.html"><img class="u-max-full-width" src="images/top_sp/logo.png" alt="APPLE BERRY" srcset="images/top_sp/logo@2x.png 2x" /></a>
@@ -31,7 +46,7 @@
                             <li><a href="#"><img src="images/top/menu_guide.png" alt="SHOPPING GUIDE" /></a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-8 pc_navi">
+                    <div class="col-sm-10 pc_navi">
                         <ul>
                             <li><a href="#"><img class="navi_menu" src="images/top/menu_login.png" alt="LOGIN" /></a></li>
                             <li><a href="#"><img class="navi_menu" src="images/top/menu_cart.png" alt="CART" /></a></li>
@@ -42,8 +57,28 @@
                         </ul>
                     </div>
                 </div>
+            </header>
+            
+            <div class="cover_area">
+                <div class="row">
+                    <div class="col-sm-9 carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div><img src="images/top/ca_banner.jpg" /></div>
+                            <div><img src="images/top/ca_banner.jpg" /></div>
+                            <div><img src="images/top/ca_banner.jpg" /></div>
+                            <div><img src="images/top/ca_banner.jpg" /></div>
+                        </div>
+                        <ul id="carousel-custome-dots" class="owl-dots">
+                            <li class="owl-dot">
+                            </li><li class="owl-dot">
+                            </li><li class="owl-dot">
+                            </li><li class="owl-dot">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
 </body>
 </html>

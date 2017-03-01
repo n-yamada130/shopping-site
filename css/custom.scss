@@ -2,82 +2,118 @@ $bgcolor: #f9f8f6;
 $brown: #514b3c;
 
 html {
-    background-color: $bgcolor;
+    background: $bgcolor;
+}
+
+.container-fluid {
+    background: $bgcolor;
+    padding: 0px 10px;
+    
+    .container-fluid {
+        padding: 0px;
+    }
+}
+
+.row {
+    margin: 0px;
 }
 
 header {
-    .container-fluid {
-        background-color: $bgcolor;
-        .logo {
-            margin-top: 15px;
-            margin-bottom: 12px;
-            text-align: center;
+    background-color: $bgcolor;
+    .logo {
+        margin-top: 15px;
+        padding: 0px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .sp_navi {
+        text-align: center;
+        img {
+            height: 24px;
+            margin-right: 4px;
         }
-        .sp_navi {
-            text-align: center;
-            img {
-                height: 24px;
-                margin-right: 4px;
-            }
-        }
-        .sp_navi_li {
-            width: 180px;
-            position: absolute;
+    }
+    .sp_navi_li {
+        width: 180px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        border: 1px solid $brown;
+        background: white;
+        display: none;
+        
+        li {
+            list-style: none;
             margin: 0;
             padding: 0;
-            border: 1px solid $brown;
-            background: white;
-            display: none;
             
+            a {
+                display: block;
+                border-bottom: 1px solid $brown;
+            }
+        }
+    }
+    @media (min-width: 550px) {
+        .row {
+            margin-top: 39px;
+        }
+        .logo {
+            img {
+                display: none;
+            }
+            margin-top: 0px;
+            height: 40px;
+            background: url("../images/top/logo.png") no-repeat center;
+        }
+        .sp_navi {
+            display: none;
+        }
+        .pc_navi {
+            padding: 0;
+            text-align: right;
+            ul {
+                margin-top: 19px;
+                margin-bottom: 0px;
+            }
             li {
                 list-style: none;
-                margin: 0;
-                padding: 0;
+                display: inline-block;
                 
-                a {
-                    display: block;
-                    border-bottom: 1px solid $brown;
+                img.navi_menu {
+                    margin-left: 20px;
+                }
+                img.navi_icon {
+                    margin-left: 9px;
                 }
             }
         }
-        @media (min-width: 550px) {
-            .row {
-                margin-top: 39px;
-            }
-            .logo {
-                img {
-                    display: none;
-                }
-                margin-top: 0px;
-                height: 40px;
-                background: url("../images/top/logo.png") no-repeat center;
-            }
-            .sp_navi {
-                display: none;
-            }
-            .pc_navi {
-                text-align: right;
-                ul {
-                    margin-top: 19px;
-                    margin-bottom: 0px;
-                }
-                li {
-                    list-style: none;
-                    display: inline-block;
-                    
-                    img.navi_menu {
-                        margin-left: 20px;
-                    }
-                    img.navi_icon {
-                        margin-left: 9px;
-                    }
-                }
-            }
+    }
+    @media (max-width: 550px) {
+        .pc_navi {
+            display: none;
         }
-        @media (max-width: 550px) {
-            .pc_navi {
-                display: none;
-            }
+    }
+}
+
+.cover_area {
+    margin-top: 12.5px;
+    
+    .owl-dots {
+        padding-left: 0;
+    }
+    .owl-dot {
+        display: inline-block;
+        letter-spacing: normal;
+        width: 25px;
+        height: 2px;
+        background: #aaaaaa;
+        margin-right: 10px;
+        
+        &.active {
+            background: #9d1a2d;
         }
+    }
+    .carousel {
+        padding: 0px;
     }
 }

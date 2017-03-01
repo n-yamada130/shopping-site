@@ -1,18 +1,28 @@
 html {
-  background-color: #f9f8f6; }
+  background: #f9f8f6; }
 
-header .container-fluid {
+.container-fluid {
+  background: #f9f8f6;
+  padding: 0px 10px; }
+  .container-fluid .container-fluid {
+    padding: 0px; }
+
+.row {
+  margin: 0px; }
+
+header {
   background-color: #f9f8f6; }
-  header .container-fluid .logo {
+  header .logo {
     margin-top: 15px;
+    padding: 0px;
     margin-bottom: 12px;
     text-align: center; }
-  header .container-fluid .sp_navi {
+  header .sp_navi {
     text-align: center; }
-    header .container-fluid .sp_navi img {
+    header .sp_navi img {
       height: 24px;
       margin-right: 4px; }
-  header .container-fluid .sp_navi_li {
+  header .sp_navi_li {
     width: 180px;
     position: absolute;
     margin: 0;
@@ -20,38 +30,55 @@ header .container-fluid {
     border: 1px solid #514b3c;
     background: white;
     display: none; }
-    header .container-fluid .sp_navi_li li {
+    header .sp_navi_li li {
       list-style: none;
       margin: 0;
       padding: 0; }
-      header .container-fluid .sp_navi_li li a {
+      header .sp_navi_li li a {
         display: block;
         border-bottom: 1px solid #514b3c; }
   @media (min-width: 550px) {
-    header .container-fluid .row {
+    header .row {
       margin-top: 39px; }
-    header .container-fluid .logo {
+    header .logo {
       margin-top: 0px;
       height: 40px;
       background: url("../images/top/logo.png") no-repeat center; }
-      header .container-fluid .logo img {
+      header .logo img {
         display: none; }
-    header .container-fluid .sp_navi {
+    header .sp_navi {
       display: none; }
-    header .container-fluid .pc_navi {
+    header .pc_navi {
+      padding: 0;
       text-align: right; }
-      header .container-fluid .pc_navi ul {
+      header .pc_navi ul {
         margin-top: 19px;
         margin-bottom: 0px; }
-      header .container-fluid .pc_navi li {
+      header .pc_navi li {
         list-style: none;
         display: inline-block; }
-        header .container-fluid .pc_navi li img.navi_menu {
+        header .pc_navi li img.navi_menu {
           margin-left: 20px; }
-        header .container-fluid .pc_navi li img.navi_icon {
+        header .pc_navi li img.navi_icon {
           margin-left: 9px; } }
   @media (max-width: 550px) {
-    header .container-fluid .pc_navi {
+    header .pc_navi {
       display: none; } }
+
+.cover_area {
+  margin-top: 12.5px; }
+  .cover_area .owl-dots {
+    padding-left: 0; }
+  .cover_area .owl-dot {
+    display: inline-block;
+    letter-spacing: normal;
+    width: 25px;
+    height: 2px;
+    background: #aaaaaa;
+    margin-right: 10px; }
+    .cover_area .owl-dot.active {
+      background: #9d1a2d; }
+  .cover_area .carousel {
+    padding: 0px; }
 
 /*# sourceMappingURL=custom.css.map */
