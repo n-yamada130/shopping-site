@@ -1,4 +1,5 @@
 $bgcolor: #f9f8f6;
+$brown: #514b3c;
 
 html {
     background-color: $bgcolor;
@@ -9,16 +10,73 @@ header {
         background-color: $bgcolor;
         .logo {
             margin-top: 15px;
+            margin-bottom: 12px;
             text-align: center;
         }
-        @media (min-width: 550px){
+        .sp_navi {
+            text-align: center;
+            img {
+                height: 24px;
+                margin-right: 4px;
+            }
+        }
+        .sp_navi_li {
+            width: 180px;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            border: 1px solid $brown;
+            background: white;
+            display: none;
+            
+            li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                
+                a {
+                    display: block;
+                    border-bottom: 1px solid $brown;
+                }
+            }
+        }
+        @media (min-width: 550px) {
+            .row {
+                margin-top: 39px;
+            }
             .logo {
                 img {
                     display: none;
                 }
-                margin-top: 39px;
+                margin-top: 0px;
                 height: 40px;
                 background: url("../images/top/logo.png") no-repeat center;
+            }
+            .sp_navi {
+                display: none;
+            }
+            .pc_navi {
+                text-align: right;
+                ul {
+                    margin-top: 19px;
+                    margin-bottom: 0px;
+                }
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    
+                    img.navi_menu {
+                        margin-left: 20px;
+                    }
+                    img.navi_icon {
+                        margin-left: 9px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 550px) {
+            .pc_navi {
+                display: none;
             }
         }
     }
