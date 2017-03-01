@@ -1,0 +1,17 @@
+html {
+  background-color: #f9f8f6; }
+
+header .container-fluid {
+  background-color: #f9f8f6; }
+  header .container-fluid .logo {
+    margin-top: 15px;
+    text-align: center; }
+  @media (min-width: 550px) {
+    header .container-fluid .logo {
+      margin-top: 39px;
+      height: 40px;
+      background: url("../images/top/logo.png") no-repeat center; }
+      header .container-fluid .logo img {
+        display: none; } }
+
+/*# sourceMappingURL=custom.css.map */

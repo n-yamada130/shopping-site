@@ -1,0 +1,25 @@
+$bgcolor: #f9f8f6;
+
+html {
+    background-color: $bgcolor;
+}
+
+header {
+    .container-fluid {
+        background-color: $bgcolor;
+        .logo {
+            margin-top: 15px;
+            text-align: center;
+        }
+        @media (min-width: 550px){
+            .logo {
+                img {
+                    display: none;
+                }
+                margin-top: 39px;
+                height: 40px;
+                background: url("../images/top/logo.png") no-repeat center;
+            }
+        }
+    }
+}
