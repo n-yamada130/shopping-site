@@ -6,7 +6,7 @@ $(document).ready(function(){
             dots: true,
             items: 1,
             autoplay: true,
-            dotsContainer: "#carousel-custome-dots"
+            dotsContainer: "#carousel-custom-dots"
         }
     );
 });

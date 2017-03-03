@@ -10,6 +10,9 @@ html {
 .row {
   margin: 0px; }
 
+.col-sm-9 {
+  padding: 0px; }
+
 header {
   background-color: #f9f8f6; }
   header .logo {
@@ -80,5 +83,44 @@ header {
       background: #9d1a2d; }
   .cover_area .carousel {
     padding: 0px; }
+
+.new_items .new_items_title {
+  text-align: center;
+  margin-bottom: 16px; }
+.new_items .new_item {
+  padding: 0px; }
+  .new_items .new_item .thumbnail {
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    padding: 8px; }
+    .new_items .new_item .thumbnail img {
+      border: 1px solid #f9f8f6; }
+    .new_items .new_item .thumbnail .caption {
+      padding: 5px 0px 0px 0px; }
+      .new_items .new_item .thumbnail .caption p {
+        font-size: 1.2rem; }
+@media (min-width: 550px) {
+  .new_items .new_items_title {
+    position: relative;
+    text-align: center; }
+    .new_items .new_items_title img {
+      position: relative;
+      z-index: 2;
+      padding: 0 1em;
+      background: #f9f8f6;
+      text-align: left; }
+    .new_items .new_items_title:before {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #e2ddd4; }
+  .new_items .new_item .thumbnail .caption p {
+    font-size: 1.3rem; } }
 
 /*# sourceMappingURL=custom.css.map */

@@ -18,6 +18,10 @@ html {
     margin: 0px;
 }
 
+.col-sm-9 {
+    padding: 0px;
+}
+
 header {
     background-color: $bgcolor;
     .logo {
@@ -115,5 +119,59 @@ header {
     }
     .carousel {
         padding: 0px;
+    }
+}
+
+.new_items {
+    .new_items_title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .new_item {
+        padding: 0px;
+        .thumbnail {
+            border: none;
+            border-radius: 0px;
+            margin-bottom: 1px;
+            margin-right: 1px;
+            padding: 8px;
+            
+            img {
+                border: 1px solid $bgcolor;
+            }
+            .caption {
+                padding: 5px 0px 0px 0px;
+                
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    @media (min-width: 550px) {
+        .new_items_title {
+            position: relative;
+            text-align: center;
+            img {
+                position: relative;
+                z-index: 2;
+                padding: 0 1em;
+                background: $bgcolor;
+                text-align: left;
+            }
+            &:before{
+                position: absolute;
+                top: 50%;
+                z-index: 1;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #e2ddd4;
+            }
+        }
+        .new_item .thumbnail .caption p {
+            font-size: 1.3rem;
+        }
     }
 }
