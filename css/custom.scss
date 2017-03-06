@@ -1,5 +1,6 @@
 $bgcolor: #f9f8f6;
-$brown: #514b3c;
+$darkbrown: #514b3c;
+$lightbrown: #887f69;
 
 html {
     background: $bgcolor;
@@ -42,7 +43,7 @@ header {
         position: absolute;
         margin: 0;
         padding: 0;
-        border: 1px solid $brown;
+        border: 1px solid $darkbrown;
         background: white;
         display: none;
         
@@ -53,7 +54,7 @@ header {
             
             a {
                 display: block;
-                border-bottom: 1px solid $brown;
+                border-bottom: 1px solid $darkbrown;
             }
         }
     }
@@ -228,6 +229,83 @@ header {
         }
         .popular_item .thumbnail .caption p {
             font-size: 1.3rem;
+        }
+    }
+}
+
+.shopping_guides {
+    .guide_title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .row {
+        display:-webkit-box;
+        display:-moz-box;
+        display:-ms-box;
+        display:-webkit-flexbox;
+        display:-moz-flexbox;
+        display:-ms-flexbox;
+        display:-webkit-flex;
+        display:-moz-flex;
+        display:-ms-flex;
+        display:flex;
+        -webkit-box-lines:multiple;
+        -moz-box-lines:multiple;
+        -webkit-flex-wrap:wrap;
+        -moz-flex-wrap:wrap;
+        -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    }
+    .guide {
+        width: 100%;
+        background: white;
+        padding: 20px;
+        line-height: 1.4rem;
+        margin-bottom: 5px;
+        p {
+            font-size: 1.3rem;
+        }
+        img {
+            max-width: 100%;
+        }
+        .guide_subtitle {
+            margin-bottom: 18px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: $lightbrown;
+        }
+        .guide_heading {
+            margin-top: 15px;
+            margin-bottom: 8px;
+            color: $lightbrown;
+        }
+    }
+    @media (min-width: 550px) {
+        .guide {
+            width: 50%;
+            border: 1px solid $bgcolor;
+        }
+
+        .guide_title {
+            position: relative;
+            text-align: center;
+            img {
+                position: relative;
+                z-index: 2;
+                padding: 0 1em;
+                background: $bgcolor;
+                text-align: left;
+            }
+            &:before{
+                position: absolute;
+                top: 50%;
+                z-index: 1;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #e2ddd4;
+            }
         }
     }
 }
