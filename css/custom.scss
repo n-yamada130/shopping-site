@@ -505,3 +505,42 @@ header {
         }
     }
 }
+
+footer {
+    .row {
+        padding: 0px;
+    }
+    .page_top {
+        text-align: center;
+        margin: 20px 0px;
+    }
+    hr {
+        border-top: 1px solid #887f69;
+        width: 94%;
+        margin: 0px auto;
+    }
+    .footer_menu {
+        text-align: center;
+        margin: 10px auto;
+        font-size: 0.8em;
+        width: 82%;
+    }
+    .copyright {
+        text-align: center;
+        font-size: 0.7em;
+        color: #b8b5ac;
+        margin-bottom: 10px;
+    }
+    
+    @media (min-width: 550px) {
+        .page_top {
+            text-align: right;
+        }
+        hr {
+            width: 100%;
+        }
+        .footer_menu {
+            margin: 30px auto;
+        }
+    }
+}
