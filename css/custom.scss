@@ -450,3 +450,58 @@ header {
         }
     }
 }
+
+.shop_info {
+    margin-top: 10px;
+    background: #ffffff;
+    .shopinfo_title {
+        background: #887f69;
+        padding: 16px;
+    }
+    .shopinfo_contents {
+        padding: 12px;
+        overflow: auto;
+        .shopinfo_thumbnail {
+            display: inline;
+            float: left;
+            width: 50%;
+            padding-right: 6px;
+            img {
+                width: 100%;
+            }
+        }
+        .shopinfo_text {
+            display: inline;
+            float: right;
+            width: 50%;
+            padding-left: 6px;
+            padding-bottom: 10px;
+            font-size: 0.8em;
+            line-height: 1.6em;
+        }
+    }
+
+    @media (min-width: 550px) {
+        .shopinfo_contents {
+            overflow: auto;
+            .shopinfo_thumbnail {
+                float: none;
+                width: 100%;
+                padding: 0px;
+                margin-bottom: 10px;
+            }
+            .shopinfo_text {
+                float: none;
+                width: 100%;
+                padding: 0px;
+                font-size: 0.9em;
+            }
+            .shopinfo_btn {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
+        }
+    }
+}
