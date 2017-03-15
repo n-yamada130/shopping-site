@@ -360,12 +360,31 @@ header {
 
 .page_link {
     background: #887f69;
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 16px;
     .page_link_title {
         float: left;
     }
     .page_link_btn {
+        text-align: right;
+    }
+}
+
+.categories {
+    margin-top: 10px;
+    .categories_title {
+        background: #887f69;
+        padding: 16px;
+    }
+    .category_item {
+        background: #ffffff;
+        padding: 16px;
+        margin-bottom: 1px;
+    }
+    .category_name {
+        float: left;
+    }
+    .category_btn {
         text-align: right;
     }
 }
