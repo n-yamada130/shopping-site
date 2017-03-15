@@ -357,3 +357,15 @@ header {
         }
     }
 }
+
+.page_link {
+    background: #887f69;
+    margin-top: 15px;
+    padding: 16px;
+    .page_link_title {
+        float: left;
+    }
+    .page_link_btn {
+        text-align: right;
+    }
+}
