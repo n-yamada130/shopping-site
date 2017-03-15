@@ -359,13 +359,20 @@ header {
 }
 
 .page_link {
-    background: #887f69;
     margin-top: 10px;
-    padding: 16px;
     .page_link_title {
+        background: #887f69;
+        padding: 16px;
+    }
+    .link_item {
+        background: #ffffff;
+        padding: 16px;
+        margin-bottom: 1px;
+    }
+    .link_name {
         float: left;
     }
-    .page_link_btn {
+    .link_btn {
         text-align: right;
     }
 }
@@ -386,5 +393,60 @@ header {
     }
     .category_btn {
         text-align: right;
+    }
+}
+
+.about {
+    margin-top: 10px;
+    background: #ffffff;
+    .about_title {
+        background: #887f69;
+        padding: 16px;
+    }
+    .about_contents {
+        padding: 12px;
+        overflow: auto;
+        .about_thumbnail {
+            display: inline;
+            float: left;
+            width: 50%;
+            padding-right: 6px;
+            img {
+                width: 100%;
+            }
+        }
+        .about_text {
+            display: inline;
+            float: right;
+            width: 50%;
+            padding-left: 6px;
+            padding-bottom: 10px;
+            font-size: 0.8em;
+            line-height: 1.6em;
+        }
+    }
+
+    @media (min-width: 550px) {
+        .about_contents {
+            overflow: auto;
+            .about_thumbnail {
+                float: none;
+                width: 100%;
+                padding: 0px;
+                margin-bottom: 10px;
+            }
+            .about_text {
+                float: none;
+                width: 100%;
+                padding: 0px;
+                font-size: 0.9em;
+            }
+            .about_btn {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
+        }
     }
 }

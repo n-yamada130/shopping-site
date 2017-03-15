@@ -270,12 +270,17 @@ header {
         margin-bottom: 8px; } }
 
 .page_link {
-  background: #887f69;
-  margin-top: 10px;
-  padding: 16px; }
+  margin-top: 10px; }
   .page_link .page_link_title {
+    background: #887f69;
+    padding: 16px; }
+  .page_link .link_item {
+    background: #ffffff;
+    padding: 16px;
+    margin-bottom: 1px; }
+  .page_link .link_name {
     float: left; }
-  .page_link .page_link_btn {
+  .page_link .link_btn {
     text-align: right; }
 
 .categories {
@@ -291,5 +296,48 @@ header {
     float: left; }
   .categories .category_btn {
     text-align: right; }
+
+.about {
+  margin-top: 10px;
+  background: #ffffff; }
+  .about .about_title {
+    background: #887f69;
+    padding: 16px; }
+  .about .about_contents {
+    padding: 12px;
+    overflow: auto; }
+    .about .about_contents .about_thumbnail {
+      display: inline;
+      float: left;
+      width: 50%;
+      padding-right: 6px; }
+      .about .about_contents .about_thumbnail img {
+        width: 100%; }
+    .about .about_contents .about_text {
+      display: inline;
+      float: right;
+      width: 50%;
+      padding-left: 6px;
+      padding-bottom: 10px;
+      font-size: 0.8em;
+      line-height: 1.6em; }
+  @media (min-width: 550px) {
+    .about .about_contents {
+      overflow: auto; }
+      .about .about_contents .about_thumbnail {
+        float: none;
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px; }
+      .about .about_contents .about_text {
+        float: none;
+        width: 100%;
+        padding: 0px;
+        font-size: 0.9em; }
+      .about .about_contents .about_btn {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        max-width: 100%; } }
 
 /*# sourceMappingURL=custom.css.map */
