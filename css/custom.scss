@@ -2,16 +2,17 @@ $bgcolor: #f9f8f6;
 $darkbrown: #514b3c;
 $lightbrown: #887f69;
 
-html {
+body {
     background: $bgcolor;
 }
 
-.container-fluid {
+.container {
     background: $bgcolor;
-    padding: 0px 10px;
-    
-    .container-fluid {
-        padding: 0px;
+    padding: 0px;
+    margin: auto;
+
+    @media (min-width: 550px){
+        width: 940px;
     }
 }
 
@@ -19,12 +20,23 @@ html {
     margin: 0px;
 }
 
-.col-sm-9 {
-    padding: 0px;
+.main_area {
+    @media (min-width: 550px){
+        padding: 0px;
+        width: 700px;
+    }
+}
+
+.sub_area {
+    @media (min-width: 550px){
+        padding-right: 0px;
+        padding-left: 20px;
+    }
 }
 
 header {
     background-color: $bgcolor;
+    margin-bottom: 12.5px;
     .logo {
         margin-top: 15px;
         padding: 0px;
@@ -101,8 +113,7 @@ header {
 }
 
 .cover_area {
-    margin-top: 12.5px;
-    
+    padding: 0px;
     .owl-dots {
         padding-left: 0;
     }
@@ -125,6 +136,7 @@ header {
 
 .new_items {
     margin-bottom: 18px;
+    padding: 0px;
     .new_items_title {
         text-align: center;
         margin-bottom: 16px;
@@ -132,6 +144,7 @@ header {
     .new_item {
         padding: 0px;
         .thumbnail {
+            background: #ffffff;
             border: none;
             border-radius: 0px;
             margin-bottom: 1px;
@@ -180,6 +193,7 @@ header {
 
 .popular_items {
     margin-bottom: 18px;
+    padding: 0px;
     .popular_items_title {
         text-align: center;
         margin-bottom: 16px;
@@ -187,6 +201,7 @@ header {
     .popular_item {
         padding: 0px;
         .thumbnail {
+            background: #ffffff;
             border: none;
             border-radius: 0px;
             margin-bottom: 1px;
@@ -234,6 +249,7 @@ header {
 }
 
 .shopping_guides {
+    padding: 0px;
     .guide_title {
         text-align: center;
         margin-bottom: 15px;
@@ -258,7 +274,7 @@ header {
     }
     .guide {
         width: 100%;
-        background: white;
+        background: #ffffff;
         padding: 20px;
         line-height: 1.4rem;
         margin-bottom: 5px;
@@ -306,6 +322,38 @@ header {
                 height: 1px;
                 background: #e2ddd4;
             }
+        }
+    }
+}
+
+.search_area {
+    background: #ffffff;
+    padding: 20px 15px;
+    .form-group {
+        margin: 0px;
+    }
+    .form_search_input {
+        border: none;
+        border-radius: 0px;
+        background: #eeeeee;
+        color: #b5b5b5;
+        font-style: italic;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    .form_search_icon {
+        border: none;
+        border-radius: 0px;
+    }
+    
+    .search_title {
+        display: none;
+    }
+    @media (min-width: 550px){
+        padding: 10px 20px 20px;
+        .search_title{
+            display: block;
+            margin-bottom: 8px;
         }
     }
 }
