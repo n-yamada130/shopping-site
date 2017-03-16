@@ -70,6 +70,19 @@ header {
             }
         }
     }
+    .breadcrumb {
+        background: #e8e4da;
+        border-radius: 3px;
+        margin: 10px;
+        color: #887f69;
+        li:first-child {
+            padding-left: 20px;
+            background: url(../images/list/home_icon.png) no-repeat left;
+        }
+        active {
+            color: #887f69;
+        }
+    }
     @media (min-width: 550px) {
         .row {
             margin-top: 39px;
