@@ -30,6 +30,7 @@ body {
         border-radius: 3px;
         color: #887f69;
         font-size: 0.9em;
+        margin-bottom: 10px;
         li:first-child {
             padding-left: 20px;
             background: url(../images/list/home_icon.png) no-repeat left;
@@ -144,6 +145,22 @@ header {
     }
     .carousel {
         padding: 0px;
+    }
+    .cover_pc {
+        display: none;
+    }
+    .cover_sp {
+        display: block;
+        width: 100%;
+    }
+    @media (min-width: 550px) {
+        .cover_pc {
+            display: block;
+            width: 100%;
+        }
+        .cover_sp {
+            display: none;
+        }
     }
 }
 

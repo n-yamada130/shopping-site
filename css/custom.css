@@ -20,7 +20,8 @@ body {
   background: #e8e4da;
   border-radius: 3px;
   color: #887f69;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  margin-bottom: 10px; }
   .main_area .breadcrumb li:first-child {
     padding-left: 20px;
     background: url(../images/list/home_icon.png) no-repeat left; }
@@ -103,6 +104,17 @@ header {
       background: #9d1a2d; }
   .cover_area .carousel {
     padding: 0px; }
+  .cover_area .cover_pc {
+    display: none; }
+  .cover_area .cover_sp {
+    display: block;
+    width: 100%; }
+  @media (min-width: 550px) {
+    .cover_area .cover_pc {
+      display: block;
+      width: 100%; }
+    .cover_area .cover_sp {
+      display: none; } }
 
 .new_items {
   margin-bottom: 18px;
