@@ -25,6 +25,19 @@ body {
         padding: 0px;
         width: 700px;
     }
+    .breadcrumb {
+        background: #e8e4da;
+        border-radius: 3px;
+        color: #887f69;
+        font-size: 0.9em;
+        li:first-child {
+            padding-left: 20px;
+            background: url(../images/list/home_icon.png) no-repeat left;
+        }
+        active {
+            color: #887f69;
+        }
+    }
 }
 
 .sub_area {
@@ -68,19 +81,6 @@ header {
                 display: block;
                 border-bottom: 1px solid $darkbrown;
             }
-        }
-    }
-    .breadcrumb {
-        background: #e8e4da;
-        border-radius: 3px;
-        margin: 10px;
-        color: #887f69;
-        li:first-child {
-            padding-left: 20px;
-            background: url(../images/list/home_icon.png) no-repeat left;
-        }
-        active {
-            color: #887f69;
         }
     }
     @media (min-width: 550px) {

@@ -16,6 +16,16 @@ body {
   .main_area {
     padding: 0px;
     width: 700px; } }
+.main_area .breadcrumb {
+  background: #e8e4da;
+  border-radius: 3px;
+  color: #887f69;
+  font-size: 0.9em; }
+  .main_area .breadcrumb li:first-child {
+    padding-left: 20px;
+    background: url(../images/list/home_icon.png) no-repeat left; }
+  .main_area .breadcrumb active {
+    color: #887f69; }
 
 @media (min-width: 550px) {
   .sub_area {
@@ -50,16 +60,6 @@ header {
       header .sp_navi_li li a {
         display: block;
         border-bottom: 1px solid #514b3c; }
-  header .breadcrumb {
-    background: #e8e4da;
-    border-radius: 3px;
-    margin: 10px;
-    color: #887f69; }
-    header .breadcrumb li:first-child {
-      padding-left: 20px;
-      background: url(../images/list/home_icon.png) no-repeat left; }
-    header .breadcrumb active {
-      color: #887f69; }
   @media (min-width: 550px) {
     header .row {
       margin-top: 39px; }
