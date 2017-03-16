@@ -128,8 +128,8 @@ header {
       background: #ffffff;
       border: none;
       border-radius: 0px;
-      margin-bottom: 1px;
-      margin-right: 1px;
+      margin-bottom: 2px;
+      margin-right: 2px;
       padding: 8px; }
       .new_items .new_item .thumbnail img {
         border: 1px solid #f9f8f6; }
@@ -171,8 +171,8 @@ header {
       background: #ffffff;
       border: none;
       border-radius: 0px;
-      margin-bottom: 1px;
-      margin-right: 1px;
+      margin-bottom: 2px;
+      margin-right: 2px;
       padding: 8px; }
       .popular_items .popular_item .thumbnail img {
         border: 1px solid #f9f8f6; }
@@ -200,6 +200,50 @@ header {
         height: 1px;
         background: #e2ddd4; }
     .popular_items .popular_item .thumbnail .caption p {
+      font-size: 1.3rem; } }
+
+.items {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  padding: 0px; }
+  .items .items_title {
+    text-align: center;
+    margin-bottom: 16px; }
+  .items .item {
+    padding: 0px; }
+    .items .item .thumbnail {
+      background: #ffffff;
+      border: none;
+      border-radius: 0px;
+      margin-bottom: 2px;
+      margin-right: 2px;
+      padding: 8px; }
+      .items .item .thumbnail img {
+        border: 1px solid #f9f8f6; }
+      .items .item .thumbnail .caption {
+        padding: 5px 0px 0px 0px; }
+        .items .item .thumbnail .caption p {
+          font-size: 1.2rem; }
+  @media (min-width: 550px) {
+    .items .items_title {
+      position: relative;
+      text-align: center; }
+      .items .items_title img {
+        position: relative;
+        z-index: 2;
+        padding: 0 1em;
+        background: #f9f8f6;
+        text-align: left; }
+      .items .items_title:before {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #e2ddd4; }
+    .items .item .thumbnail .caption p {
       font-size: 1.3rem; } }
 
 .shopping_guides {
