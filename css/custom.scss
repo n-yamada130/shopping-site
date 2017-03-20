@@ -21,6 +21,7 @@ body {
 }
 
 .main_area {
+    padding: 0px 10px;
     @media (min-width: 550px){
         padding: 0px;
         width: 700px;
@@ -307,6 +308,20 @@ header {
                 }
             }
         }
+    }
+    .back_btn, .next_btn {
+        background: #887f69;
+        color: #ffffff;
+        text-align: center;
+        padding: 9px;
+        margin-top: 25px;
+        width: 120px;
+    }
+    .back_btn {
+        float: left;
+    }
+    .next_btn {
+        float: right;
     }
     @media (min-width: 550px) {
         .items_title {
