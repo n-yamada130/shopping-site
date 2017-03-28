@@ -22,10 +22,6 @@ body {
 
 .main_area {
     padding: 0px;
-    @media (min-width: 550px){
-        padding: 0px;
-        width: 700px;
-    }
     .breadcrumb {
         background: #e8e4da;
         border-radius: 3px;
@@ -40,6 +36,15 @@ body {
         }
         active {
             color: #887f69;
+        }
+    }
+    @media (min-width: 550px){
+        padding: 0px;
+        width: 700px;
+        .breadcrumb {
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 0.9em;
         }
     }
 }
@@ -429,6 +434,11 @@ header {
 .product {
     background: #ffffff;
     padding: 20px 10px;
+    .product_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
     .product_name {
         letter-spacing: 0.1em;
     }
@@ -437,13 +447,21 @@ header {
         color: #a6a6a6;
     }
     .product_images {
-        img {
+        #display_img img {
             width: 300px;
         }
-        ul {
-            padding: 0px;
+        #list_img {
             font-size: 1.6em;
             margin: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+            ul {
+                padding: 0px;
+            }
         }
         li {
             list-style: none;
@@ -458,6 +476,34 @@ header {
         border-top: 1px solid #e3e8cf;
         margin-top: 14px;
         margin-bottom: 10px;
+    }
+    @media (min-width: 550px){
+        padding: 40px 60px;
+        .product_name {
+            padding: 0px;
+        }
+        .product_code {
+            padding: 0px;
+            text-align: right;
+            vertical-align: bottom;
+        }
+        .product_images {
+            display: flex;
+            #display_img img {
+                width: 410px;
+            }
+            #list_img {
+                flex-direction: column;
+                margin-left: 10px;
+                li {
+                    margin-top: 0px;
+                    margin-bottom: 7px;
+                    img {
+                        width: 76px;
+                    }
+                }
+            }
+        }
     }
 }
 

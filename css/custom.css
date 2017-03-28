@@ -14,10 +14,6 @@ body {
 
 .main_area {
   padding: 0px; }
-  @media (min-width: 550px) {
-    .main_area {
-      padding: 0px;
-      width: 700px; } }
   .main_area .breadcrumb {
     background: #e8e4da;
     border-radius: 3px;
@@ -31,6 +27,14 @@ body {
       background: url(../images/list/home_icon.png) no-repeat left; }
     .main_area .breadcrumb active {
       color: #887f69; }
+  @media (min-width: 550px) {
+    .main_area {
+      padding: 0px;
+      width: 700px; }
+      .main_area .breadcrumb {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 0.9em; } }
 
 @media (min-width: 550px) {
   .sub_area {
@@ -319,17 +323,28 @@ header {
 .product {
   background: #ffffff;
   padding: 20px 10px; }
+  .product .product_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
   .product .product_name {
     letter-spacing: 0.1em; }
   .product .product_code {
     font-size: 0.8em;
     color: #a6a6a6; }
-  .product .product_images img {
+  .product .product_images #display_img img {
     width: 300px; }
-  .product .product_images ul {
-    padding: 0px;
+  .product .product_images #list_img {
     font-size: 1.6em;
-    margin: 0px; }
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch; }
+    .product .product_images #list_img ul {
+      padding: 0px; }
   .product .product_images li {
     list-style: none;
     display: inline-block;
@@ -340,6 +355,27 @@ header {
     border-top: 1px solid #e3e8cf;
     margin-top: 14px;
     margin-bottom: 10px; }
+  @media (min-width: 550px) {
+    .product {
+      padding: 40px 60px; }
+      .product .product_name {
+        padding: 0px; }
+      .product .product_code {
+        padding: 0px;
+        text-align: right;
+        vertical-align: bottom; }
+      .product .product_images {
+        display: flex; }
+        .product .product_images #display_img img {
+          width: 410px; }
+        .product .product_images #list_img {
+          flex-direction: column;
+          margin-left: 10px; }
+          .product .product_images #list_img li {
+            margin-top: 0px;
+            margin-bottom: 7px; }
+            .product .product_images #list_img li img {
+              width: 76px; } }
 
 .shopping_guides {
   padding: 0px; }
