@@ -36,10 +36,12 @@ body {
         margin-right: 0px;
         font-size: 0.9em; } }
 
-@media (min-width: 550px) {
-  .sub_area {
-    padding-right: 0px;
-    padding-left: 20px; } }
+.sub_area {
+  padding: 0px 10px; }
+  @media (min-width: 550px) {
+    .sub_area {
+      padding-right: 0px;
+      padding-left: 20px; } }
 
 header {
   background-color: #f9f8f6;
@@ -267,7 +269,7 @@ header {
 
 .recent_items {
   margin-bottom: 18px;
-  padding: 0px; }
+  padding: 0px 10px; }
   .recent_items .recent_items_title {
     text-align: center;
     margin-bottom: 16px; }
@@ -288,13 +290,13 @@ header {
           font-size: 1.2rem; }
   .recent_items .recent_items_title_pc {
     display: none;
-    margin-bottom: 30px; }
+    margin: 30px 0px; }
     .recent_items .recent_items_title_pc img {
       padding: 0px; }
   .recent_items .recent_items_title_sp {
     display: block;
     text-align: center;
-    margin-bottom: 20px; }
+    margin: 20px 0px; }
   @media (min-width: 550px) {
     .recent_items .recent_items_title_pc {
       display: block;
@@ -512,7 +514,7 @@ header {
         padding: 0px; } }
 
 .shopping_guides {
-  padding: 0px; }
+  padding: 0px 10px; }
   .shopping_guides .guide_title {
     text-align: center;
     margin-bottom: 15px; }
