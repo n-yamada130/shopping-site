@@ -4,3 +4,8 @@ $(window).load(function(){
         $("#display_img img").attr("src", img_src);
    });
 });
+$(document).ready(function(){
+  $("#menu").click(function(){
+    $(".sp_navi_li").slideToggle();
+  });
+});

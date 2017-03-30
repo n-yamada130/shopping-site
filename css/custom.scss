@@ -76,20 +76,23 @@ header {
     .sp_navi_li {
         width: 180px;
         position: absolute;
-        margin: 0;
-        padding: 0;
         border: 1px solid $darkbrown;
         background: white;
         display: none;
-        
+        z-index: 5;
+        padding: 0px;
+        right: 2%;
         li {
             list-style: none;
             margin: 0;
             padding: 0;
-            
             a {
                 display: block;
                 border-bottom: 1px solid $darkbrown;
+                padding: 5px;
+            }
+            img {
+                max-width: 100%;
             }
         }
     }
@@ -136,7 +139,7 @@ header {
 }
 
 .cover_area {
-    padding: 0px;
+    padding: 0px 10px;
     .owl-dots {
         padding-left: 0;
     }
@@ -163,6 +166,7 @@ header {
         width: 100%;
     }
     @media (min-width: 550px) {
+        padding: 0px;
         .cover_pc {
             display: block;
             width: 100%;
@@ -175,7 +179,7 @@ header {
 
 .new_items {
     margin-bottom: 18px;
-    padding: 0px;
+    padding: 0px 10px;
     .new_items_title {
         text-align: center;
         margin-bottom: 16px;
@@ -203,6 +207,7 @@ header {
         }
     }
     @media (min-width: 550px) {
+        padding: 10px;
         .new_items_title {
             position: relative;
             text-align: center;
@@ -232,7 +237,7 @@ header {
 
 .popular_items {
     margin-bottom: 18px;
-    padding: 0px;
+    padding: 0px 10px;
     .popular_items_title {
         text-align: center;
         margin-bottom: 16px;
@@ -260,6 +265,7 @@ header {
         }
     }
     @media (min-width: 550px) {
+        padding: 0px;
         .popular_items_title {
             position: relative;
             text-align: center;
@@ -290,7 +296,7 @@ header {
 .items {
     margin-top: 10px;
     margin-bottom: 18px;
-    padding: 0px;
+    padding: 0px 10px;
     .items_title {
         text-align: center;
         margin-bottom: 16px;
@@ -332,6 +338,7 @@ header {
         float: right;
     }
     @media (min-width: 550px) {
+        padding: 0px;
         .items_title {
             position: relative;
             text-align: center;
@@ -401,6 +408,7 @@ header {
         margin: 20px 0px;
     }
     @media (min-width: 550px) {
+        padding: 0px;
         .recent_items_title_pc {
             display: block;
             position: relative;
@@ -718,6 +726,7 @@ header {
         }
     }
     @media (min-width: 550px) {
+        padding: 0px;
         .guide {
             width: 50%;
             border: 1px solid $bgcolor;
